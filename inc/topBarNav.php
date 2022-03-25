@@ -10,7 +10,7 @@
                   <div class="input-group">
                     <input class="form-control form-control-sm form " type="search" placeholder="Search" aria-label="Search" name="search"  value="<?php echo isset($_GET['search']) ? $_GET['search'] : "" ?>"  aria-describedby="button-addon2">
                     <div class="input-group-append">
-                      <button class="btn btn-outline-light btn-sm m-0" type="submit" id="button-addon2"><i class="fa fa-search"></i></button>
+                      <button class="btn btn-outline-light bg-gradient-blue btn-sm m-0" type="submit" id="button-addon2"><i class="fa fa-search"></i></button>
                     </div>
                   </div>
                 </form>
@@ -45,7 +45,7 @@
                             <a href="./?p=my_account" class="text-dark  nav-link text-white"><b> Hi, <?php echo $_settings->userdata('firstname')?>!</b></a>
                             <a href="logout.php" class="text-dark  nav-link text-white"><i class="fa fa-sign-out-alt"></i></a>
                         <?php else: ?>
-                        <button class="btn btn-outline-dark ml-2" id="login-btn" type="button">Login</button>
+                        <button class="btn btn-outline-light ml-2" id="login-btn" type="button">Login</button>
                         <?php endif; ?>
                     </div>
                 </div>
