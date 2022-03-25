@@ -17,11 +17,11 @@
             <form action="" id="login-form">
                 <div class="form-group">
                     <label for="" class="control-label">Email</label>
-                    <input type="email" class="form-control form" name="email" required>
+                    <input placeholder="xyz@xyz.com" type="email" class="form-control form" name="email" required>
                 </div>
                 <div class="form-group">
                     <label for="" class="control-label">Password</label>
-                    <input type="password" class="form-control form" name="password" required>
+                    <input placeholder="Password" type="password" class="form-control form" name="password" required>
                 </div>
                 <div class="form-group d-flex justify-content-between">
                     <a href="javascript:void()" id="create_account">Create Account</a>
