@@ -267,11 +267,11 @@ CREATE TABLE `system_info` (
 --
 
 INSERT INTO `system_info` (`id`, `meta_field`, `meta_value`) VALUES
-(1, 'name', 'Cosmetic and Beauty Products Online Shop'),
+(1, 'name', 'Jewelry Shop'),
 (6, 'short_name', 'Beauty'),
-(11, 'logo', 'uploads/logo-1645065716.jpg?v=1645065716'),
+(11, 'logo', 'uploads/jewelry-logo.png?v=1645065716'),
 (13, 'user_avatar', 'uploads/user_avatar.jpg'),
-(14, 'cover', 'uploads/cover-1645065725.jpg?v=1645065725');
+(14, 'cover', 'uploads/diamonds-background.jpg?v=1645065725');
 
 -- --------------------------------------------------------
 
