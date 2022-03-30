@@ -16,8 +16,8 @@
     #page-title{
       text-shadow: 6px 4px 7px black;
       font-size: 3.5em;
-      color: #fff4f4 !important;
-      background: #8080801c;
+      color: ghostwhite !important;
+      background: #8080800c;
     }
   </style>
   <h1 class="text-center text-white px-4 py-5" id="page-title"><b><?php echo $_settings->info('name') ?></b></h1>
