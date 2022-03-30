@@ -72,7 +72,7 @@
 	              <input type="file" class="custom-file-input rounded-circle" id="customFile" name="banners[]" multiple accept=".png,.jpg,.jpeg" onchange="displayImg3(this,$(this))">
 	              <label class="custom-file-label" for="customFile">Choose file</label>
 	            </div>
-				<small><i>Choose to upload new banner immages</i></small>
+				<small><i>Choose to upload new banner images</i></small>
 			</div>
 			<?php 
             $upload_path = "uploads/banner";
