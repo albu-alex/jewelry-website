@@ -21,11 +21,11 @@
             <div class="col-lg-5 border-right">
                 
                 <div class="form-group">
-                    <label for="" class="control-label">Firstname</label>
+                    <label for="" class="control-label">First Name</label>
                     <input type="text" class="form-control form-control-sm form" name="firstname" required>
                 </div>
                 <div class="form-group">
-                    <label for="" class="control-label">Lastname</label>
+                    <label for="" class="control-label">Last Name</label>
                     <input type="text" class="form-control form-control-sm form" name="lastname" required>
                 </div>
                 <div class="form-group">
@@ -37,6 +37,7 @@
                     <select name="gender" id="" class="custom-select select" required>
                         <option>Male</option>
                         <option>Female</option>
+                        <option>Other</option>
                     </select>
                 </div>
             </div>
