@@ -84,13 +84,13 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `category`, `description`, `status`, `delete_flag`, `date_created`) VALUES
-(1, 'Necklaces', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue interdum pellentesque. Praesent bibendum vehicula libero a congue. In molestie rhoncus finibus.', 1, 0, '2022-02-17 11:27:11'),
-(2, 'Pendants', 'n interdum quis urna sed auctor. Vivamus a ligula ut dui aliquam efficitur ut eu ante. Phasellus pretium ut risus vitae euismod. Cras ac velit mollis, sodales urna vitae, pharetra dui. Mauris et sem vel est interdum lobortis sit amet quis felis.', 1, 0, '2022-02-17 11:27:24'),
-(3, 'Rings', 'n interdum quis urna sed auctor. Vivamus a ligula ut dui aliquam efficitur ut eu ante. Phasellus pretium ut risus vitae euismod. Cras ac velit mollis, sodales urna vitae, pharetra dui. Mauris et sem vel est interdum lobortis sit amet quis felis.', 1, 0, '2022-02-17 11:27:45'),
-(4, 'Earrings', 'Donec sit amet consectetur leo, eu lacinia risus. Donec dignissim magna lectus, vitae viverra lacus blandit vitae.', 1, 0, '2022-02-17 11:27:55'),
-(5, 'Bracelets', 'Proin sit amet elit in massa posuere ullamcorper quis quis sem. Phasellus accumsan augue vitae varius rhoncus. Proin vitae leo ante. Praesent a lorem justo.', 1, 0, '2022-02-17 11:28:38'),
-(6, 'Gold Jewelry', 'Nam nisl ex, condimentum nec malesuada cursus, ullamcorper in velit. Quisque lobortis diam nunc, at auctor felis placerat eu. Nullam egestas rhoncus lacinia.', 1, 0, '2022-02-17 11:29:00'),
-(7, 'Silver Jewelry', 'Donec imperdiet viverra eros eu elementum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean in nulla nec ex cursus consequat nec vel ipsum. Phasellus tristique erat sit amet neque venenatis volutpat. Maecenas varius venenatis sagittis.', 1, 0, '2022-02-17 11:29:19');
+(1, 'Necklaces', 'World renowned necklaces from brands like Pandora, Bulgari and Cartier', 1, 0, '2022-02-17 11:27:11'),
+(2, 'Pendants', 'World renowned pendants from brands like Pandora, Swarovski and Teilor', 1, 0, '2022-02-17 11:27:24'),
+(3, 'Rings', 'World renowned rings from brands like Swarovski, Bulgari and Tiffany', 1, 0, '2022-02-17 11:27:45'),
+(4, 'Earrings', 'World renowned earrings from brands like Pandora, Bulgari and Cartier', 1, 0, '2022-02-17 11:27:55'),
+(5, 'Bracelets', 'World renowned bracelets from brands like Pandora, Bulgari and Cartier', 1, 0, '2022-02-17 11:28:38'),
+(6, 'Gold Jewelry', 'World renowned gold jewelry from brands like Pandora, Bulgari and Cartier', 1, 0, '2022-02-17 11:29:00'),
+(7, 'Silver Jewelry', 'World renowned silver jewelry from brands like Pandora, Bulgari and Cartier', 1, 0, '2022-02-17 11:29:19');
 
 -- --------------------------------------------------------
 

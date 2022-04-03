@@ -56,7 +56,7 @@
                 <h1 class="display-5 fw-bolder border-bottom border-primary pb-1"><?php echo $name ?></h1>
                 <p class="m-0"><small>Brand: <?php echo $bname ?></small></p>
                 <div class="fs-5 mb-5">
-                &#8369; <span id="price"><?php echo isset($inv[0]['price']) ?  format_num($inv[0]['price']) : "--" ?></span>
+                &euro; <span id="price"><?php echo isset($inv[0]['price']) ?  format_num($inv[0]['price']) : "--" ?></span>
                 <br>
                 <span><small><span class="text-muted">Available Stock:</span> <span id="avail"><?php echo isset($inv[0]['stock']) ? format_num($inv[0]['stock']) : "--" ?></span></small></span>
                 <h5>Variant</h5>
