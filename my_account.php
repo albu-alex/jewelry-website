@@ -19,7 +19,7 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>DateTime</th>
+                                <th>Date</th>
                                 <th>Transaction Ref Code</th>
                                 <th>Amount</th>
                                 <th>Order Status</th>
