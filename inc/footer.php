@@ -59,7 +59,7 @@
   })
 </script>
 <!-- Footer-->
-<footer class="py-4 bg-gradient-indigo">
+<footer style="margin-top: 10%;width: 100vw;" class="py-4 bg-gradient-indigo">
             <div class="container">
               <p class="m-0 text-center text-white">Copyright &copy; <?php echo $_settings->info('short_name') ?> 2021</p>
               <p class="m-0 text-center text-white">Developed By: <a href="mailto:oretnom23@gmail.com">Sorina</a></p>

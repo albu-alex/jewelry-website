@@ -11,11 +11,11 @@
                         <form action="" id="update_account">
                         <input type="hidden" name="id" value="<?php echo $_settings->userdata('id') ?>">
                             <div class="form-group">
-                                <label for="firstname" class="control-label">Firstname</label>
+                                <label for="firstname" class="control-label">First Name</label>
                                 <input type="text" name="firstname" class="form-control form" value="<?php echo $_settings->userdata('firstname') ?>" required>
                             </div>
                             <div class="form-group">
-                                <label for="lastname" class="control-label">Lastname</label>
+                                <label for="lastname" class="control-label">Last Name</label>
                                 <input type="text" name="lastname" class="form-control form" value="<?php echo $_settings->userdata('lastname') ?>" required>
                             </div>
                             <div class="form-group">
@@ -27,6 +27,7 @@
                                 <select name="gender" id="" class="custom-select select" required>
                                     <option <?php echo $_settings->userdata('gender') == "Male" ? "selected" : '' ?>>Male</option>
                                     <option <?php echo $_settings->userdata('gender') == "Female" ? "selected" : '' ?>>Female</option>
+                                    <option <?php echo $_settings->userdata('gender') == "Other" ? "selected" : '' ?>>Other</option>
                                 </select>
                             </div>
                             <div class="form-group">
