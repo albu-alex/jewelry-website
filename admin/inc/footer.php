@@ -55,7 +55,7 @@
     }
   })
 </script>
-<footer style="bottom: 0;width: 100vw;" class="main-footer text-sm">
+<footer style="bottom: 0;" class="main-footer text-sm">
         <strong>Copyright © <?php echo date('Y') ?>. 
         <!-- <a href=""></a> -->
         </strong>
