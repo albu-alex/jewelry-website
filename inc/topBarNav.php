@@ -25,13 +25,14 @@
                         <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./?p=products&c=<?php echo md5($crow['id']) ?>"><?php echo $crow['category'] ?></a></li>
                         <?php endwhile; ?>
                         <?php if($count_cats > 3): ?>
-                        <li class="nav-item"><a class="nav-link text-white" href="./?p=view_categories">All Categories</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="./?p=view_categories">Categories</a></li>
                         <?php endif; ?>
                         <li class="nav-item"><a class="nav-link text-white" href="./?p=about">About</a></li>
                     </ul>
                     <div class="d-flex align-items-center">
                       <?php if($_settings->userdata('id') > 0 && $_settings->userdata('login_type') == 2): ?>
                         <a class="text-dark mr-2 nav-link text-white" href="./?p=cart">
+
                             <i class="bi-cart-fill me-1"></i>
                             Cart
                             <span class="badge bg-dark text-white ms-1 rounded-pill" id="cart-count">
@@ -42,7 +43,7 @@
                             </span>
                         </a>
                         
-                            <a href="./?p=my_account" class="text-dark  nav-link text-white"><b> Hi, <?php echo $_settings->userdata('firstname')?>!</b></a>
+                            <a href="./?p=my_account" class="text-dark  nav-link text-white"><span><b> Hi, <?php echo $_settings->userdata('firstname')?>!</b></span></a>
                             <a href="logout.php" class="text-dark  nav-link text-white"><i class="fa fa-sign-out-alt"></i></a>
                         <?php else: ?>
                         <button class="btn btn-outline-light ml-2" id="login-btn" type="button">Login</button>
