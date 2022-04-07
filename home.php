@@ -73,11 +73,11 @@ $brands = isset($_GET['b']) ? json_decode(urldecode($_GET['b'])) : array();
                 </div>
             </div>
             <div class="container px-4 px-lg-5 mt-5">
-                <div class="col mb-5" style="width: 60vw">
-                    <button style="height: 40vh"
+                <div class="col mb-5">
+                    <button style="width: 60vw;height: 20vh;display:flex;justify-content: center;text-align: center"
                        class="card product-item text-reset text-decoration-none"
-                       id="login-btn">
-                        <h3>Want to be eligible for promotions? Join us!</h3>
+                       id="login-button">
+                        <h3 style="align-self: center">Want to be eligible for promotions? Join us!</h3>
                     </button>
                 </div>
                 <h2 class="fw-normal">Our main products</h2>
@@ -179,9 +179,8 @@ $brands = isset($_GET['b']) ? json_decode(urldecode($_GET['b'])) : array();
         $('.brand-item').change(function(){
             _filter()
         })
-    })
-    $('#login-btn').click(function(){
-        console.log("it works")
-        uni_modal("","login.php")
+        $('#login-button').click(function(){
+            uni_modal("","registration.php")
+        })
     })
 </script>
