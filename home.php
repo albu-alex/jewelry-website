@@ -114,7 +114,7 @@ $brands = isset($_GET['b']) ? json_decode(urldecode($_GET['b'])) : array();
                             <div class="card-body p-4">
                                 <div class="">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder"><?php echo $row['name'] ?></h5>
+                                    <h5 class="fw-bolder d-none d-lg-block"><?php echo $row['name'] ?></h5>
                                     <!-- Product price-->
                                     <span><b class="text-muted d-none d-lg-block">Price: </b><p class="d-none d-lg-block">
                                             <?php echo $price ?></p></span>
