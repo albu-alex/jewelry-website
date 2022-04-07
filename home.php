@@ -73,6 +73,14 @@ $brands = isset($_GET['b']) ? json_decode(urldecode($_GET['b'])) : array();
                 </div>
             </div>
             <div class="container px-4 px-lg-5 mt-5">
+                <div class="col mb-5" style="width: 60vw">
+                    <button style="height: 40vh"
+                       class="card product-item text-reset text-decoration-none"
+                       id="login-btn">
+                        <h3>Want to be eligible for promotions? Join us!</h3>
+                    </button>
+                </div>
+                <h2 class="fw-normal">Our main products</h2>
                 <div class="row gx-4 gx-lg-4 row-cols-md-3 row-cols-xl-4 ">
                     <?php 
                         $where = "";
@@ -172,5 +180,8 @@ $brands = isset($_GET['b']) ? json_decode(urldecode($_GET['b'])) : array();
             _filter()
         })
     })
-
+    $('#login-btn').click(function(){
+        console.log("it works")
+        uni_modal("","login.php")
+    })
 </script>
