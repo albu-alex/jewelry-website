@@ -12,13 +12,13 @@ $brands = isset($_GET['b']) ? json_decode(urldecode($_GET['b'])) : array();
 ?>
 <section class="py-0">
     <div class="container">
-    <div class="row">
-        <div class="col-lg-2 px-1 border-right text-sm position-sticky ">
+    <div class="row" style="margin-top: 3vh">
+        <div class="col-lg-2 px-1 text-sm position-sticky ">
             <h4><b>Brands</b></h4>
             <ul class="list-group">
                 <a href="" class="list-group-item list-group-item-action">
                     <div class="icheck-primary d-inline">
-                        <input type="checkbox" id="brandAll" >
+                        <input type="checkbox" id="brandAll" disabled>
                         <label for="brandAll">
                              All
                         </label>
@@ -102,11 +102,13 @@ $brands = isset($_GET['b']) ? json_decode(urldecode($_GET['b'])) : array();
                             $price .= " ~ ".$inv[count($inv) - 1];
                             }
                     ?>
-                    <div class="col mb-5">
-                        <a class="card product-item text-reset text-decoration-none" href=".?p=view_product&id=<?php echo md5($row['id']) ?>">
+                    <div class="col mb-5" style="width: 20vw">
+                        <a style="height: 60vh"
+                           class="card product-item text-reset text-decoration-none"
+                           href=".?p=view_product&id=<?php echo md5($row['id']) ?>">
                             <!-- Product image-->
                             <div class="overflow-hidden shadow product-holder">
-                            <img class="card-img-top w-100 product-cover" src="<?php echo validate_image($img) ?>" alt="..." />
+                            <img class="card-img-top w-95 product-cover" src="<?php echo validate_image($img) ?>" alt="..." />
                             </div>
                             <!-- Product details-->
                             <div class="card-body p-4">
@@ -114,10 +116,13 @@ $brands = isset($_GET['b']) ? json_decode(urldecode($_GET['b'])) : array();
                                     <!-- Product name-->
                                     <h5 class="fw-bolder"><?php echo $row['name'] ?></h5>
                                     <!-- Product price-->
-                                        <span><b class="text-muted">Price: </b><?php echo $price ?></span>
+                                    <span><b class="text-muted d-none d-lg-block">Price: </b><p class="d-none d-lg-block">
+                                            <?php echo $price ?></p></span>
                                 </div>
-                                <p class="m-0"><small><span class="text-muted">Brand:</span> <?php echo $row['bname'] ?></small></p>
-                                <p class="m-0"><small><span class="text-muted">Category:</span> <?php echo $row['category'] ?></small></p>
+                                <p class="m-0"><small><span class="text-muted d-none d-lg-block">Brand:</span>
+                                    <p class="d-none d-lg-block"><?php echo $row['bname'] ?></p></small></p>
+                                <p class="m-0"><small><span class="text-muted d-none d-lg-block">Category:</span>
+                                <p class="d-none d-lg-block"><?php echo $row['category'] ?></p></small></p>
                             </div>
                         </a>
                     </div>

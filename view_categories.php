@@ -1,6 +1,6 @@
 <?php 
-$title = "All Product Categories";
-$sub_title = "";
+$title = "Product Categories";
+$sub_title = "All products sold by Jewelry Shop";
 if(isset($_GET['c']) && isset($_GET['s'])){
     $cat_qry = $conn->query("SELECT * FROM categories where md5(id) = '{$_GET['c']}'");
     if($cat_qry->num_rows > 0){

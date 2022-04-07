@@ -12,7 +12,7 @@
 }
 #clock{
     background-color:#333;
-    font-family: sans-serif;
+    font-family: Georgia, serif;
     font-size:25px;
     text-shadow:0px 0px 1px #fff;
     color:#fff;
@@ -26,7 +26,7 @@
 }
 #date {
     font-size:9px;
-    font-family:arial,sans-serif;
+    font-family:Georgia ,sans-serif;
     color:#fff;
 }
 nav.navbar-inverse{

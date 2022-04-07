@@ -46,12 +46,12 @@ $brands = isset($_GET['b']) ? json_decode(urldecode($_GET['b'])) : array();
 <section class="py-5">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 border-right mb-2 pb-3">
+            <div class="col-md-3 mb-2 pb-3">
                 <h4><b>Brands</b></h4>
                 <ul class="list-group">
                     <a href="" class="list-group-item list-group-item-action">
                         <div class="icheck-primary d-inline">
-                            <input type="checkbox" id="brandAll" >
+                            <input type="checkbox" id="brandAll" disabled>
                             <label for="brandAll">
                                 All
                             </label>
@@ -119,7 +119,8 @@ $brands = isset($_GET['b']) ? json_decode(urldecode($_GET['b'])) : array();
                                 }
                         ?>
                         <div class="col-md-12 mb-5">
-                            <a class="card product-item text-reset text-decoration-none" href=".?p=view_product&id=<?php echo md5($row['id']) ?>">
+                            <a style="height: 50vh" class="card product-item text-reset text-decoration-none"
+                               href=".?p=view_product&id=<?php echo md5($row['id']) ?>">
                                 <!-- Product image-->
                                 <div class="overflow-hidden shadow product-holder">
                                     <img class="card-img-top w-100 product-cover" src="<?php echo validate_image($img) ?>" alt="..." />
