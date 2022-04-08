@@ -60,11 +60,18 @@
 </script>
 <!-- Footer-->
 <footer style="margin-top: 10%" class="py-4 bg-gradient-indigo">
-            <div class="container">
-              <p class="m-0 text-center text-white">Copyright &copy; <?php echo $_settings->info('short_name') ?> 2021</p>
-              <p class="m-0 text-center text-white">Developed By: <a href="mailto:test@gmail.com">Sorina</a></p>
-          </div>
-        </footer>
+        <div class="container">
+          <p class="m-0 text-center text-white">Copyright &copy; <?php echo $_settings->info('short_name') ?> 2021</p>
+          <p class="m-0 text-center text-white">Developed By: <a href="mailto:test@gmail.com">Sorina</a></p>
+      </div>
+</footer>
+<div style="width: 100%;background-color: var(--bs-warning);height: 10vh;padding-top: 3vh">
+    <div style="display: flex;margin-left: 18%;flex-direction: row;justify-content: space-between;width: 60%;">
+        <a style="text-decoration: none;color: ghostwhite" href="./">Visit the main page</a>
+        <a class="d-none d-lg-block" style="text-decoration: none;color: ghostwhite" href="./?p=about">Everything about us</a>
+        <a class="d-none d-lg-block" style="text-decoration: none;color: ghostwhite" href="customer_support.php">File a complaint</a>
+    </div>
+</div>
 
    
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
