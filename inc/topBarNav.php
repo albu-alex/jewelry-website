@@ -18,7 +18,7 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4" style="padding-left: 5vw">
                         <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./">Home</a></li>
                         <?php 
-                        $cat_qry = $conn->query("SELECT * FROM categories where status = 1  limit 2");
+                        $cat_qry = $conn->query("SELECT * FROM categories where status = 1  limit 3");
                         $count_cats =$conn->query("SELECT * FROM categories where status = 1 ")->num_rows;
                         while($crow = $cat_qry->fetch_assoc()):
                         ?>
