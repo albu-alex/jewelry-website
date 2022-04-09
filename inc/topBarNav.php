@@ -8,14 +8,14 @@
 
                 <form class="form-inline" id="search-form">
                   <div class="input-group">
-                    <input style="width: 15vw" class="form-control form-control-sm form" type="search" placeholder="Search" aria-label="Search" name="search"  value="<?php echo isset($_GET['search']) ? $_GET['search'] : "" ?>"  aria-describedby="button-addon2">
+                    <input class="form-control form-control-sm form" type="search" placeholder="Search" aria-label="Search" name="search"  value="<?php echo isset($_GET['search']) ? $_GET['search'] : "" ?>"  aria-describedby="button-addon2">
                     <div class="input-group-append">
                       <button class="btn btn-outline-light bg-gradient-blue btn-sm m-0" type="submit" id="button-addon2"><i class="fa fa-search"></i></button>
                     </div>
                   </div>
                 </form>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4" style="padding-left: 5vw">
+                    <ul id="categories" class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4" style="padding-left: 5vw">
                         <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./">Home</a></li>
                         <?php 
                         $cat_qry = $conn->query("SELECT * FROM categories where status = 1  limit 3");
@@ -64,6 +64,11 @@
         if($('body').offset.top == 0)
           $('#mainNav').removeClass('navbar-shrink')
     })
+  })
+
+  $(".input-group").click(function() {
+      $(".input-group").width("60vw");
+      $("#categories").hide()
   })
 
   $('#search-form').submit(function(e){
